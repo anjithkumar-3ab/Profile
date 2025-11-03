@@ -5,7 +5,11 @@ export default function About(){
   const [data, setData] = useState(null);
 
   useEffect(()=>{
-    fetch('/api/portfolio/data')
+    const apiUrl = process.env.NODE_ENV === 'production' 
+      ? '/api/portfolio/data' 
+      : 'http://localhost:5000/api/portfolio/data';
+    
+    fetch(apiUrl)
       .then(r => r.json())
       .then(d => setData(d))
       .catch(err => console.error(err));

@@ -5,7 +5,11 @@ export default function Projects(){
   const [projects, setProjects] = useState([]);
 
   useEffect(()=>{
-    fetch('/api/portfolio/data')
+    const apiUrl = process.env.NODE_ENV === 'production' 
+      ? '/api/portfolio/data' 
+      : 'http://localhost:5000/api/portfolio/data';
+    
+    fetch(apiUrl)
       .then(r => r.json())
       .then(d => setProjects(d.projects || []))
       .catch(err => console.error(err));

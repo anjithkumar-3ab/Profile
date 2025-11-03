@@ -10,7 +10,11 @@ function Resume() {
 
   const fetchPortfolioData = async () => {
     try {
-      const response = await fetch('/api/portfolio/data');
+      const apiUrl = process.env.NODE_ENV === 'production' 
+        ? '/api/portfolio/data' 
+        : 'http://localhost:5000/api/portfolio/data';
+      
+      const response = await fetch(apiUrl);
       const data = await response.json();
       setPortfolioData(data);
       setLoading(false);

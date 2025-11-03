@@ -7,7 +7,11 @@ export default function Home(){
   const [error, setError] = useState(null);
 
   useEffect(()=>{
-    fetch('/api/portfolio/data')
+    const apiUrl = process.env.NODE_ENV === 'production' 
+      ? '/api/portfolio/data' 
+      : 'http://localhost:5000/api/portfolio/data';
+    
+    fetch(apiUrl)
       .then(r => {
         if (!r.ok) {
           throw new Error(`HTTP error! status: ${r.status}`);
