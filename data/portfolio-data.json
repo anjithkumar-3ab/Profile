@@ -1,0 +1,103 @@
+{
+  "personal": {
+    "firstName": "Anjith",
+    "middleName": "Kumar",
+    "lastName": "Bathala",
+    "fullName": "Bathala Anjith Kumar",
+    "displayName": "Anjith Kumar",
+    "age": 21,
+    "email": "anjithkumars143@gmail.com",
+    "phone": "+91 8639133088",
+    "location": "Madanapalle",
+    "country": "India",
+    "profileImage": "PIC.jpg",
+    "tagline": "B.Tech Student in Computer Science and Engineering (AI & ML)",
+    "bio": "🌟 Hi, I'm Bathala Anjith Kumar, a dedicated B.Tech student in Computer Science and Engineering (AI & ML specialization) at Madanapalli Institute of Technology and Science. I'm passionate about exploring new technologies and continuously developing my technical and problem-solving skills. I aim to contribute to innovative projects that create a meaningful impact in the field of computer science."
+  },
+  "education": {
+    "college": "Madanapalli Institute of Technology and Science",
+    "degree": "Bachelor of Technology",
+    "branch": "Computer Science and Engineering (AI & ML)",
+    "startYear": 2021,
+    "endYear": 2025,
+    "location": "Madanapalle, India"
+  },
+  "social": {
+    "github": "https://github.com/anjithkumar-3ab",
+    "linkedin": "https://linkedin.com/in/anjithkumarbathala",
+    "twitter": "",
+    "instagram": ""
+  },
+  "typewriterTexts": [
+    "Student & Developer",
+    "Web Designer",
+    "Problem Solver",
+    "Tech Enthusiast",
+    "Quick Learner"
+  ],
+  "skills": {
+    "technical": [
+      {
+        "name": "HTML/CSS",
+        "level": 90,
+        "icon": "fab fa-html5"
+      },
+      {
+        "name": "JavaScript",
+        "level": 85,
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "React",
+        "level": 80,
+        "icon": "fab fa-react"
+      },
+      {
+        "name": "Node.js",
+        "level": 75,
+        "icon": "fab fa-node"
+      },
+      {
+        "name": "Python",
+        "level": 70,
+        "icon": "fab fa-python"
+      },
+      {
+        "name": "Git",
+        "level": 80,
+        "icon": "fab fa-git-alt"
+      }
+    ],
+    "soft": [
+      {
+        "name": "Problem Solving",
+        "icon": "fas fa-brain",
+        "description": "Analytical thinking and creative solutions to complex challenges"
+      },
+      {
+        "name": "Team Collaboration",
+        "icon": "fas fa-users",
+        "description": "Working effectively in team environments and contributing to group success"
+      },
+      {
+        "name": "Time Management",
+        "icon": "fas fa-clock",
+        "description": "Efficiently organizing tasks and meeting deadlines"
+      },
+      {
+        "name": "Communication",
+        "icon": "fas fa-comments",
+        "description": "Clear and effective communication with team members and clients"
+      }
+    ]
+  },
+  "projects": [],
+  "experience": [],
+  "certifications": [],
+  "settings": {
+    "theme": "dark-neon",
+    "particlesEnabled": true,
+    "typewriterEnabled": true,
+    "preloaderEnabled": true
+  }
+}

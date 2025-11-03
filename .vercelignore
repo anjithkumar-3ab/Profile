@@ -1,0 +1,8 @@
+node_modules
+.git
+.env.example
+*.md
+!README.md
+!VERCEL_DEPLOY.md
+.vscode
+.idea
