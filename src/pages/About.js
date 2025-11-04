@@ -20,7 +20,7 @@ export default function About(){
       <div className="container about-content">
         <div className="about-image">
           {personal?.profileImage ? (
-            <img src={personal.profileImage} alt={personal.fullName} style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%'}} />
+            <img src={personal.profileImage} alt={personal.fullName} style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', aspectRatio: '1/1'}} />
           ) : (
             <div className="image-placeholder">📸</div>
           )}
