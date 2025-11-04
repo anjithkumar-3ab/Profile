@@ -5,13 +5,11 @@ export default function Skills(){
   const [skills, setSkills] = useState([]);
 
   useEffect(()=>{
-    const apiUrl = process.env.NODE_ENV === 'production' 
-      ? '/api/portfolio/data/skills' 
-      : 'http://localhost:5000/api/portfolio/data/skills';
+    const apiUrl = '/portfolio-data.json';
     
     fetch(apiUrl)
       .then(r => r.json())
-      .then(d => setSkills(d.technical || []))
+      .then(d => setSkills(d.skills?.technical || []))
       .catch(err => console.error(err));
   },[]);
 

@@ -7,9 +7,7 @@ export default function Home(){
   const [error, setError] = useState(null);
 
   useEffect(()=>{
-    const apiUrl = process.env.NODE_ENV === 'production' 
-      ? '/api/portfolio/data' 
-      : 'http://localhost:5000/api/portfolio/data';
+    const apiUrl = '/portfolio-data.json';
     
     fetch(apiUrl)
       .then(r => {
