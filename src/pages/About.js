@@ -19,7 +19,11 @@ export default function About(){
     <section className="about page-section">
       <div className="container about-content">
         <div className="about-image">
-          <div className="image-placeholder">📸</div>
+          {personal?.profileImage ? (
+            <img src={personal.profileImage} alt={personal.fullName} style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%'}} />
+          ) : (
+            <div className="image-placeholder">📸</div>
+          )}
         </div>
         <div className="about-text">
           <h3>{personal?.displayName ?? 'About Me'}</h3>
